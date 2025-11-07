@@ -1,4 +1,4 @@
-export default function Card({ item }) {
+export default function Card({ item }){
     return (
         <article className="card">
             <img className="card__media" src={item.img} alt="" loading="lazy" />
@@ -13,3 +13,4 @@ export default function Card({ item }) {
         </article>
     )
 }
+

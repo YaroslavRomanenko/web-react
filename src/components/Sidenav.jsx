@@ -1,4 +1,4 @@
-export default function Sidenav() {
+export default function Sidenav(){
     return (
         <section className="sidenav">
             <aside className="sidebar">
