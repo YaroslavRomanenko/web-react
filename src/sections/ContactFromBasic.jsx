@@ -4,7 +4,7 @@ export default function ContactFromBasic() {
   const [status, setStatus] = useState('idle');
   const [error, setError] = useState('');
 
-  const endpoint = 'https://postman-echo.com/post'
+  const endpoint = '/echo/post'
 
   async function onSubmit(e) {
     e.preventDefault();
