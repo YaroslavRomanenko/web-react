@@ -1,6 +1,6 @@
-import { useState } from 'react'
-import ContactFromBasic from "../sections/ContactFromBasic";
-import ContactFromRHF from '../sections/ContactFromRHF';
+import {useState} from "react";
+import ContactFormBasic from '../sections/ContactFromBasic';
+import ContactFormRHF from "../sections/ContactFromRHF.jsx";
 
 export default function Contacts() {
   const [mode, setMode] = useState('basic');
@@ -26,7 +26,7 @@ export default function Contacts() {
         </button>
       </div>
 
-      {mode === 'basic' ? <ContactFromBasic/> : <ContactFromRHF/>}
+      {mode === 'basic' ? <ContactFormBasic/> : <ContactFormRHF/>}
     </>
   )
 }
