@@ -4,11 +4,14 @@ import './styles/tw.css'
 import './styles/main.scss'
 import App from './App.jsx'
 import { ThemeProvider } from './context/ThemeContext.jsx'
+import { BrowserRouter } from 'react-router'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ThemeProvider initial='light'>
-      <App/>
-    </ThemeProvider>
+    <BrowserRouter>
+      <ThemeProvider initial='light'>
+        <App/>
+      </ThemeProvider>
+    </BrowserRouter>
   </StrictMode>,
 )
